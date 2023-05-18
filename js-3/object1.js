@@ -2,7 +2,7 @@ let Pedro = {
     nombre: "Pedro Perez",
     edad: 30,
     activo: true,
-    hobbies: ["programar", " squash", " piano"]
+    hobbies: ["programar", " squash", " piano"],
     };
 
 console.log (Pedro.edad);
@@ -15,8 +15,8 @@ for (let propiedad in Pedro) {
         console.log (propiedad + ": "+Pedro [propiedad])
     }
     
-Pedro.saluda = function() {
-    return "Hola, me llamo " + this.nombre;
+function saluda () {
+    return "Hola, me llamo " + Pedro.nombre;
         }
       
-console.log(Pedro.saluda);
+console.log(saluda());
